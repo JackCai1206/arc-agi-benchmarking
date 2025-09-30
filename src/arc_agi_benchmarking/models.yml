@@ -5,6 +5,17 @@ models:
 #### OpenAI ####
 ################
 
+  - name: "qwen3-8b"
+    model_name: "Qwen/Qwen3-8B"
+    provider: "openai"
+    api_type: "responses"
+    stream: false
+    max_completion_tokens: 200000
+    pricing:
+      date: "2025-08-07"
+      input: 0
+      output: 0
+
   - name: "gpt-5-2025-08-07-high"
     model_name: "gpt-5-2025-08-07"
     provider: "openai"

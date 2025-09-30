@@ -1,0 +1,65 @@
+You are solving ARC-AGI grid puzzles.
+Each task contains a few train input->output examples (colored cells as integers 0-9).
+
+Below is a list of input and output pairs with a pattern. Your goal is to identify the pattern or transformation in the training examples that maps the input to the output, then apply that pattern to the test input to give a final output.
+
+Respond in the format of the training output examples
+
+Please fully explain your reasoning. What pattern do you identify? How do you apply the pattern to the test input?
+Identify what specific SKILL or ABILITY is required to solve the task. This is not the procedure to solve the task, but rather the underlying abstraction that is needed to solve the task. Consult the following list of skills. 
+
+Core Cognitive Skills for ARC-like Problem Solving
+--------------------------------------------------
+
+1. Primitive Visual Perception
+   - Pixel Clustering: Grouping adjacent same-color cells into coherent objects.
+   - Figure-Ground Separation: Distinguishing foreground from background.
+   - Boundary Detection: Identifying edges where one shape stops and another begins.
+   - Proximity Grouping: Grouping nearby fragments into larger structures.
+   - Symmetry Detection: Instantly noticing mirrored or balanced layouts.
+   - Visual Completion (Occlusion Filling): Mentally completing broken or missing parts of a shape.
+
+2. Spatial Relationship Skills
+   - Relative Position Encoding: Understanding above, below, left, right relationships.
+   - Adjacency Awareness: Detecting whether two shapes are touching or separated.
+   - Inside/Outside Recognition: Determining containment relationships.
+   - Distance Estimation (Discrete): Counting steps between two objects or positions.
+   - Alignment Recognition: Detecting shared straight-line alignment.
+   - Connectivity / Path Tracing: Recognizing continuous chains or networks.
+   - Topological Equivalence: Recognizing sameness despite stretching or warping.
+
+3. Primitive Physical Intuition
+   - Gravity Projection: Expecting unsupported objects to "fall" downward.
+   - Support Reasoning: Understanding that objects need a base to remain stable.
+   - Collision Awareness: Knowing moving objects stop when they hit barriers.
+   - Containment Reasoning: Treating boundaries as "containers" that hold or limit movement.
+   - Continuity of Motion: Expecting smooth, consistent movement rather than teleportation.
+   - Directional Flow Intuition: Expecting movement along a preferred axis or path.
+
+4. Local Pattern Recognition
+   - Color Matching: Grouping items by color quickly and accurately.
+   - Repetition Detection: Noticing repeating units or cycles.
+   - Incremental Change Detection: Spotting step-by-step growth or change.
+   - Outlier Detection: Instantly seeing an element that doesn’t fit the group.
+   - Proportional Matching: Comparing relative sizes or counts.
+   - Symmetry & Reflection Match: Recognizing mirrored or rotated versions of shapes.
+   - Tiling / Grid Awareness: Understanding repeating tiling structures.
+
+5. Mental Simulation & Transformation
+   - Rule Hypothesis Simulation: Trying a candidate rule mentally before acting.
+   - Sequential Step Simulation: Predicting multi-step transformations in order.
+   - Inverse Simulation (Reversal): Mentally undoing a transformation to infer the original state.
+   - Multi-Object Interaction Prediction: Simulating how multiple parts interact.
+   - Constraint Propagation: Filling in missing pieces to satisfy rules.
+   - Intermediate State Tracking: Holding intermediate puzzle states in working memory.
+
+
+--Training Examples--
+{training_examples}
+--End of Training Examples--
+
+--Test Input--
+{test_input}
+--End of Test Input--
+
+Your response:

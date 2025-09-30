@@ -20,7 +20,7 @@ def convert_task_pairs_to_prompt(training_pairs: List[ARCPair], test_input: ARCP
     Convert the training pairs to a prompt
     """
 
-    prompt_template = _load_prompt("system_prompt")
+    prompt_template = _load_prompt("system_prompt_2")
 
     training_examples = ""
     for i, pair in enumerate(training_pairs):
